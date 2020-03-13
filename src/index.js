@@ -1,3 +1,1 @@
-if (console) {
-    console.log('log');
-}
+import './style.css'
