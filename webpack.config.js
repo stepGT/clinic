@@ -62,6 +62,27 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img'
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 70
+              }
+            }
+          }
+        ]
       }
     ]
   }
