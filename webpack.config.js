@@ -32,7 +32,7 @@ module.exports = {
   ],
   module: {
     rules: [
-      {
+      /*{
         test: /\.css$/,
         use: [
           {
@@ -45,7 +45,15 @@ module.exports = {
           },
           'css-loader',
         ],
-      },
-    ],
+      },*/
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]
   }
 }

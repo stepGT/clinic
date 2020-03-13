@@ -1,6 +1,5 @@
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'
+import './style.scss'
+import './bootstrap/bootstrap'
 
 $(document).ready(function ($) {
   $('body').css('background-color', 'yellow');
