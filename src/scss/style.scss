@@ -1,0 +1,56 @@
+@import './src/bootstrap/bootstrap';
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+}
+//$body-bg: #ccc;
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+@include media-breakpoint-up(xs) { }
+@include media-breakpoint-up(sm) { }
+@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(xl) {
+  .wrapper {
+    width: 1432px;
+    margin: 0 auto;
+    border: 1px red solid;
+    background: #f2f2f2;
+  }
+  .main-top {
+    &__logo {
+      background: url(/src/images/Logo.png) no-repeat;
+      width: 140px;
+      height: 63px;
+    }
+    &__nav {
+      margin-top: 20px;
+      a {
+        line-height: 19px;
+        color: #000;
+      }
+    }
+    &__contacts {
+      margin-top: 10px;
+      img {
+        margin-right: 25px;
+      }
+      &_phone {
+      }
+      span {
+        display: block;
+        line-height: 21px;
+      }
+    }
+  }
+}
