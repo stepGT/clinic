@@ -41,20 +41,6 @@ module.exports = {
   ],
   module: {
     rules: [
-      /*{
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: (resourcePath, context) => {
-                return path.relative(path.dirname(resourcePath), context) + '/';
-              },
-            },
-          },
-          'css-loader',
-        ],
-      },*/
       {
         test: /\.scss$/,
         use: [
@@ -70,7 +56,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img'
+              outputPath: './images',
+              useRelativePath: true
             }
           },
           {

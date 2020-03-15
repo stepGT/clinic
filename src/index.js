@@ -1,4 +1,4 @@
-import './scss/style.scss'
+import './style.scss'
 import './bootstrap/bootstrap'
 
 $(document).ready(function ($) {

@@ -1,4 +1,4 @@
-@import './src/bootstrap/bootstrap';
+@import './bootstrap/bootstrap';
 body {
   font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
@@ -24,7 +24,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__logo {
-        background: url('/src/images/Logo.png') no-repeat;
+        background: url('./images/Logo.png') no-repeat;
         width: 140px;
         height: 63px;
       }
@@ -83,9 +83,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
     }
     .banner {
-      background: url('/Demo-Login-mobile.png') no-repeat 0 0 transparent;
-      width: 320px;
-      height: 526px;
       &__img {
         background: url('/src/images/Group 2.svg') no-repeat 0 0 transparent;
         height: 430px;
