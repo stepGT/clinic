@@ -24,7 +24,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__logo {
-        background: url('./images/Logo.png') no-repeat;
+        background: url('images/top_small_logo.png') no-repeat;
         width: 140px;
         height: 63px;
       }
@@ -81,11 +81,38 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           line-height: 54px;
         }
       }
+      &__list {
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          li {
+            margin-bottom: 3%;
+          }
+          li:before {
+            content: url('/src/images/galka.svg');
+            padding-right: 10px;
+          }
+        }
+        width: 40%;
+        margin: 40px auto;
+      }
     }
     .banner {
       &__img {
-        background: url('/src/images/Group 2.svg') no-repeat 0 0 transparent;
+        background: url('/src/images/main_banner.svg') no-repeat 0 0 transparent;
         height: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__button {
+        background: url('/src/images/yellow_button.svg') no-repeat 0 0 transparent;
+        width: 270px;
+        height: 55px;
+        align-self: flex-end;
+        margin-bottom: 20px;
+
       }
     }
   }
