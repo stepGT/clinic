@@ -107,6 +107,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__button {
+        cursor: pointer;
         background: url('images/yellow_button.svg') no-repeat 0 0 transparent;
         width: 270px;
         height: 55px;
@@ -134,6 +135,55 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           line-height: 21px;
           color: #616161;
         }
+      }
+    }
+    .e-clinic {
+      margin: auto;
+      width: 85%;
+      &__row {
+        margin: 50px auto;
+      }
+      .banner__button {
+        cursor: pointer;
+        margin: 100px auto auto;
+      }
+      &__text {
+        margin-bottom: 80px;
+      }
+      &__text:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: #3855b3;
+        border-bottom: thin #3855b3 dotted;
+        text-decoration: none;
+      }
+      a + span {
+        content: url('images/galka_bottom.svg');
+        padding-left: 5px;
+      }
+      h3 {
+        padding-top: 80px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #616161;
+      }
+      &__img_1 {
+        background: url('images/e-clinic-1.svg') no-repeat 0 0 transparent;
+        height: 266px;
+      }
+      &__img_2 {
+        background: url('images/e-clinic-2.svg') no-repeat 0 0 transparent;
+        height: 305px;
+      }
+      &__img_3 {
+        background: url('images/e-clinic-3.svg') no-repeat 0 0 transparent;
+        height: 245px;
       }
     }
   }
