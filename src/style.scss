@@ -90,7 +90,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             margin-bottom: 3%;
           }
           li:before {
-            content: url('/src/images/galka.svg');
+            content: url('images/galka.svg');
             padding-right: 10px;
           }
         }
@@ -100,14 +100,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .banner {
       &__img {
-        background: url('/src/images/main_banner.svg') no-repeat 0 0 transparent;
+        background: url('images/main_banner.svg') no-repeat 0 0 transparent;
         height: 430px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       &__button {
-        background: url('/src/images/yellow_button.svg') no-repeat 0 0 transparent;
+        background: url('images/yellow_button.svg') no-repeat 0 0 transparent;
         width: 270px;
         height: 55px;
         align-self: flex-end;
