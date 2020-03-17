@@ -24,7 +24,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__logo {
-        background: url('images/top_small_logo.png') no-repeat;
+        background: url(images/top_small_logo.png) no-repeat 60% 0 transparent;
         width: 140px;
         height: 63px;
       }
@@ -72,7 +72,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       &__text {
         p {
-          padding: 0 143px;
+          padding: 0 295px;
         }
         h1 {
           font-family: Gilroy, sans-serif;
@@ -119,6 +119,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       margin: 40px auto;
     }
     .advantage {
+      width: 85%;
+      margin: auto;
       &__item {
         width: 294px;
         height: 214px;
