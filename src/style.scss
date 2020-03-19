@@ -295,7 +295,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           color: #000;
         }
         li:before {
-          content: url(images/tire.svg);
+          content: url('images/tire.svg');
           position: relative;
           padding-right: 5px;
           bottom: 5px;
@@ -316,6 +316,77 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         line-height: 20px;
         color: #5d5d5d;
         margin: 0;
+      }
+    }
+    .feedback_form {
+      input, textarea {
+        width: 372px;
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        border-radius: 3.5px;
+      }
+      input {
+        height: 48px;
+        outline: none;
+      }
+      ::placeholder {
+        color: #c8c8c8;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      textarea {
+        height: 133px;
+        outline: none;
+        resize: none;
+      }
+      button {
+        width: 251px;
+        height: 48px;
+        background: #ffcc2b;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+      }
+      margin: 50px 0;
+      &__wrapper {
+        width: 826px;
+        height: 332px;
+        border-radius: 5px;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.75);
+        &_img {
+          background: url('images/feedback_form_envelope.svg') no-repeat center 0 transparent;
+          height: 120px;
+          margin-top: 15px;
+        }
+        &_block {
+          &_item {
+            &_button {
+              padding-left: 40px;
+            }
+            margin-bottom: 15px;
+            text-align: right;
+          }
+          h3 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            color: #000;
+          }
+          p {
+            line-height: 24px;
+            text-align: center;
+            color: #616161;
+            width: 327px;
+            margin: auto;
+          }
+          width: 50%;
+        }
       }
     }
   }
