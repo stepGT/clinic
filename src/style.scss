@@ -30,7 +30,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__logo {
-        background: url(images/top_small_logo.png) no-repeat center 0 transparent;
+        background: url('assets/images/top_small_logo.png') no-repeat center 0 transparent;
         width: 140px;
         height: 63px;
       }
@@ -96,7 +96,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             margin-bottom: 3%;
           }
           li:before {
-            content: url('images/galka.svg');
+            content: url('assets/images/galka.svg');
             padding-right: 10px;
           }
         }
@@ -106,7 +106,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .banner {
       &__img {
-        background: url('images/main_banner.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/main_banner.svg') no-repeat 0 0 transparent;
         height: 430px;
         display: flex;
         align-items: center;
@@ -114,7 +114,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       &__button {
         cursor: pointer;
-        background: url('images/yellow_button.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/yellow_button.svg') no-repeat 0 0 transparent;
         width: 270px;
         height: 55px;
         align-self: flex-end;
@@ -166,7 +166,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         text-decoration: none;
       }
       a + span {
-        content: url('images/galka_bottom.svg');
+        content: url('assets/images/galka_bottom.svg');
         padding-left: 5px;
       }
       h3 {
@@ -181,15 +181,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         color: #616161;
       }
       &__img_1 {
-        background: url('images/e-clinic-1.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/e-clinic-1.svg') no-repeat 0 0 transparent;
         height: 266px;
       }
       &__img_2 {
-        background: url('images/e-clinic-2.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/e-clinic-2.svg') no-repeat 0 0 transparent;
         height: 305px;
       }
       &__img_3 {
-        background: url('images/e-clinic-3.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/e-clinic-3.svg') no-repeat 0 0 transparent;
         height: 245px;
       }
     }
@@ -217,7 +217,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       &__item {
         &_blue {
           position: absolute;
-          background: url(images/rectangle.svg) no-repeat 0 0 transparent;
+          background: url('assets/images/rectangle.svg') no-repeat 0 0 transparent;
           height: 332px;
           padding: 50px 100px 0 50px;
           top: -30%;
@@ -235,7 +235,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             color: #cad7ff;
           }
           &_img {
-            background: url('images/yellow_book.svg') no-repeat 0 0 transparent;
+            background: url('assets/images/yellow_book.svg') no-repeat 0 0 transparent;
             height: 73px;
           }
         }
@@ -249,15 +249,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         border-right: 1px solid #d0daec;
       }
       &__img_1 {
-        background: url('images/statistic_1.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/statistic_1.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
       &__img_2 {
-        background: url('images/statistic_2.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/statistic_2.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
       &__img_3 {
-        background: url('images/statistic_3.svg') no-repeat 0 0 transparent;
+        background: url('assets/images/statistic_3.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
     }
@@ -295,7 +295,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           color: #000;
         }
         li:before {
-          content: url('images/tire.svg');
+          content: url('assets/images/tire.svg');
           position: relative;
           padding-right: 5px;
           bottom: 5px;
@@ -359,7 +359,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         border: 1px solid #e0e0e0;
         box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.75);
         &_img {
-          background: url('images/feedback_form_envelope.svg') no-repeat center 0 transparent;
+          background: url('assets/images/feedback_form_envelope.svg') no-repeat center 0 transparent;
           height: 120px;
           margin-top: 15px;
         }

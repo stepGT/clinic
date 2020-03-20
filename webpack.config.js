@@ -44,8 +44,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: './assets/imgs',
+              name: '[name].[contenthash].[ext]',
+              outputPath: './assets/images',
               useRelativePath: true
             }
           }
@@ -57,7 +57,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
+              name: '[name].[contenthash].[ext]',
               outputPath: './assets/fonts',
               useRelativePath: true
             }
