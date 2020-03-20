@@ -1,6 +1,7 @@
+@import './fonts.scss';
 @import './bootstrap/bootstrap';
 body {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: 'Proxima-Nova', sans-serif;
   font-size: 16px;
 }
 hr {
@@ -9,7 +10,8 @@ hr {
 ul {
   display: inline-block;
 }
-$body-bg: #f2f2f2;
+$body-bg: #fff;
+$light-blue: #f1f6ff;
 
 @include media-breakpoint-up(xs) { }
 @include media-breakpoint-up(sm) { }
@@ -60,6 +62,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         }
       }
       &__contacts {
+        &_logo {
+          background: url('assets/images/Phone.svg') no-repeat 0 0 transparent;
+          height: 39px;
+          width: 39px;
+          margin-right: 20px;
+        }
         justify-content: flex-end;
         img {
           margin-right: 25px;
@@ -72,6 +80,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .under-top {
       &__logo {
+        background: url('assets/images/under_top_logo.svg') no-repeat 0 0 transparent;
+        width: 240px;
+        height: 108px;
+      }
+      &__wrapper_logo {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -122,12 +135,48 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
     }
     .under_banner {
-      margin: 40px auto;
+      background: $light-blue;
+      padding: 40px 0;
     }
     .advantage {
-      width: 85%;
-      margin: auto;
+      background: $light-blue;
       &__item {
+        &_1 {
+          background: url('assets/images/advantage_1.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_2 {
+          background: url('assets/images/advantage_2.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_3 {
+          background: url('assets/images/advantage_3.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_4 {
+          background: url('assets/images/advantage_4.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_5 {
+          background: url('assets/images/advantage_5.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_6 {
+          background: url('assets/images/advantage_6.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_7 {
+          background: url('assets/images/advantage_7.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_8 {
+          background: url('assets/images/advantage_8.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
+        &_9 {
+          background: url('assets/images/advantage_9.svg') no-repeat center 0 transparent;
+          height: 110px;
+        }
         width: 294px;
         height: 214px;
         text-align: center;
@@ -195,13 +244,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .statistic {
       margin: auto;
-      width: 85%;
+      width: 75%;
       h2 {
         font-weight: 800;
         font-size: 30px;
         line-height: 37px;
         color: #000;
-        margin: 50px 0 100px 0;
+        margin: 20px 0 30px 0;
       }
       h3 {
         font-weight: 800;
@@ -215,13 +264,21 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         color: #4a5b79;
       }
       &__item {
+        background: $light-blue;
+        height: 270px;
+        &_wrapper_1, &_wrapper_2 {
+          padding-right: 0;
+        }
+        &_wrapper_blue, &_wrapper_3 {
+          padding-left: 0;
+        }
         &_blue {
           position: absolute;
           background: url('assets/images/rectangle.svg') no-repeat 0 0 transparent;
           height: 332px;
           padding: 50px 100px 0 50px;
-          top: -30%;
-          left: -8%;
+          top: -10%;
+          left: -5%;
           z-index: 1;
           h3 {
             font-weight: 800;
