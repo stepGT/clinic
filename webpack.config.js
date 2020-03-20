@@ -1,28 +1,22 @@
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-/**
- *
- * @type {{entry: string, output: {filename: string, path:
- *     (Promise.<*>|*|{}|{mainFields})}}}
- */
 module.exports = {
-  mode: 'production',
-  entry: './src/index.js',
+  context: path.resolve(__dirname, 'src'),
+  mode: 'development',
+  entry: {
+    main: './index.js'
+  },
   output: {
-    filename: "main.js",
+    filename: 'assets/js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
+      template: './index.html'
     }),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
@@ -30,14 +24,9 @@ module.exports = {
       JQuery: 'jquery',
       'window.JQuery': 'jquery'
     }),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default', {discardComments: {removeAll: true}}],
-      },
-      canPrint: true
-    })
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    }),
   ],
   module: {
     rules: [
@@ -56,21 +45,25 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: './images',
+              outputPath: './assets/imgs',
               useRelativePath: true
             }
-          },
+          }
+        ]
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/i,
+        use: [
           {
-            loader: 'image-webpack-loader',
+            loader: 'file-loader',
             options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 70
-              }
+              name: '[name].[ext]',
+              outputPath: './assets/fonts',
+              useRelativePath: true
             }
           }
         ]
       }
     ]
   }
-}
+};
