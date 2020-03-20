@@ -380,7 +380,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         width: 372px;
         background: #fff;
         border: 1px solid #e8e8e8;
-        border-radius: 3.5px;
+        border-radius: 5px;
       }
       input {
         height: 48px;
@@ -412,9 +412,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       &__wrapper {
         width: 826px;
         height: 332px;
-        border-radius: 5px;
+        margin: auto;
+        border-radius: 10px;
         border: 1px solid #e0e0e0;
-        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.75);
+        /*box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.75);*/
         &_img {
           background: url('assets/images/feedback_form_envelope.svg') no-repeat center 0 transparent;
           height: 120px;
