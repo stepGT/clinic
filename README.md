@@ -12,10 +12,10 @@ For production environments
 $ npm run prod
 ```
 
-For develop environments run http://localhost:8080
+For develop environments run and open http://localhost:7770
 
 ```sh
-$ npm run dev
+$ npm run start:dev
 ```
 Output
 
