@@ -14,6 +14,9 @@ module.exports = {
     filename: 'assets/js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
+  devServer: {
+    port: 7770
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
