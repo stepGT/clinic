@@ -98,6 +98,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           font-weight: 800;
           font-size: 36px;
           line-height: 54px;
+          margin: 20px 0 0 0;
         }
       }
       &__list {
@@ -266,6 +267,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       &__item {
         background: $light-blue;
         height: 270px;
+        padding: 20px 170px 30px 30px;
         &_wrapper_1, &_wrapper_2 {
           padding-right: 0;
         }
@@ -296,7 +298,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             height: 73px;
           }
         }
-        padding: 20px 0 30px 30px;
       }
       &__item_1 {
         border-bottom: 1px solid #d0daec;
@@ -388,7 +389,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       ::placeholder {
         color: #c8c8c8;
-        padding: 10px;
+        padding: 15px;
         font-size: 18px;
         line-height: 22px;
       }
@@ -449,6 +450,48 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
     }
     .reviews {
+      background: $light-blue;
+      margin-top: 50px;
+      padding-bottom: 50px;
+      .carousel-indicators li {
+        background: url('../images/indicator.svg') no-repeat 0 0 transparent;
+        width: 9px;
+        height: 9px;
+      }
+      .carousel-indicators li.active {
+        background: url('../images/indicator_active.svg') no-repeat 0 0 transparent;
+        width: 9px;
+        height: 9px;
+      }
+      .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .carousel-control-next .carousel-control-next-icon {
+        background: url('../images/r_arrow.svg') no-repeat 0 0 transparent;
+        width: 36px;
+        height: 13px;
+        position: relative;
+        right: 0;
+        top: 180px;
+      }
+      .carousel-control-prev .carousel-control-prev-icon {
+        background: url('../images/l_arrow.svg') no-repeat 0 0 transparent;
+        width: 36px;
+        height: 13px;
+        position: relative;
+        right: 12%;
+        top: 180px;
+      }
+      .carousel-indicators {
+        bottom: -50px;
+      }
+      &__carousel-item {
+        width: 400px;
+        float: left;
+        margin-right: 2%;
+      }
       &__item {
         padding: 20px;
         background: #fff;
@@ -462,8 +505,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           display: block;
         }
       }
-      background: $light-blue;
-      margin-top: 50px;
       h4 {
         font-size: 16px;
         line-height: 19px;
