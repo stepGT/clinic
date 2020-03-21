@@ -319,63 +319,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         height: 69px;
       }
     }
-    .footer {
-      margin-top: 30px;
-      hr {
-        border: 1px solid #d9d9d9;
-        width: 44%;
-        margin: 0;
-        padding: 0;
-      }
-      &__logo {
-        margin: 0 auto;
-      }
-      &__logo_wrapper {
-        display: flex;
-        align-items: center;
-      }
-      &__text_wrapper {
-        .copyright {
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-        }
-        ul {
-          padding: 0;
-          margin: 0;
-          list-style: none;
-          margin-right: 35px;
-        }
-        li {
-          font-family: Roboto, sans-serif;
-          font-size: 15px;
-          line-height: 30px;
-          color: #000;
-        }
-        li:before {
-          content: url('../images/tire.svg');
-          position: relative;
-          padding-right: 5px;
-          bottom: 5px;
-        }
-        b {
-          font-family: Gilroy, sans-serif;
-          font-size: 19px;
-          line-height: 24px;
-          color: #000;
-        }
-      }
-      &__text_wrapper_copyright {
-        font-family: Roboto, sans-serif;
-        font-size: 15px;
-        line-height: 33px;
-      }
-      &__text_wrapper_p {
-        line-height: 20px;
-        color: #5d5d5d;
-        margin: 0;
-      }
-    }
     .feedback_form {
       input, textarea {
         width: 372px;
@@ -386,10 +329,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       input {
         height: 48px;
         outline: none;
+        padding: 0 0 0 5%;
       }
       ::placeholder {
         color: #c8c8c8;
-        padding: 15px;
         font-size: 18px;
         line-height: 22px;
       }
@@ -397,6 +340,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         height: 133px;
         outline: none;
         resize: none;
+        padding: 5% 0 0 5%;
       }
       button {
         width: 251px;
@@ -417,7 +361,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         padding: 40px 30px 0 0;
         border-radius: 10px;
         border: 1px solid #e0e0e0;
-        box-shadow: 1px 10px 20px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
         &_img {
           background: url('../images/feedback_form_envelope.svg') no-repeat center 0 transparent;
           height: 120px;
@@ -542,6 +486,64 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       &__item_img_3 {
         background: url('../images/reviews_3.svg') no-repeat 0 0 transparent;
+      }
+    }
+    .footer {
+      margin-top: 30px;
+      hr {
+        border: 1px solid #d9d9d9;
+        width: 44%;
+        margin: 0;
+        padding: 0;
+      }
+      &__logo {
+        margin: 0 auto;
+      }
+      &__logo_wrapper {
+        display: flex;
+        align-items: center;
+      }
+      &__text_wrapper {
+        padding: 0 5.4%;
+        .copyright {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          margin-right: 5%;
+        }
+        li {
+          font-family: Roboto, sans-serif;
+          font-size: 15px;
+          line-height: 30px;
+          color: #000;
+        }
+        li:before {
+          content: url('../images/tire.svg');
+          position: relative;
+          padding-right: 5px;
+          bottom: 5px;
+        }
+        b {
+          font-family: Gilroy, sans-serif;
+          font-size: 19px;
+          line-height: 24px;
+          color: #000;
+        }
+      }
+      &__text_wrapper_copyright {
+        font-family: Roboto, sans-serif;
+        font-size: 15px;
+        line-height: 33px;
+      }
+      &__text_wrapper_p {
+        line-height: 20px;
+        color: #5d5d5d;
+        margin: 0;
       }
     }
   }
