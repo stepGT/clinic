@@ -1,5 +1,5 @@
 @import './fonts.scss';
-@import './bootstrap/bootstrap';
+@import './../../bootstrap/bootstrap';
 body {
   font-family: 'Proxima-Nova', sans-serif;
   font-size: 16px;
@@ -32,7 +32,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         justify-content: center;
       }
       &__logo {
-        background: url('assets/images/top_small_logo.png') no-repeat center 0 transparent;
+        background: url('../images/top_small_logo.png') no-repeat center 0 transparent;
         width: 140px;
         height: 63px;
       }
@@ -63,7 +63,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       &__contacts {
         &_logo {
-          background: url('assets/images/Phone.svg') no-repeat 0 0 transparent;
+          background: url('../images/Phone.svg') no-repeat 0 0 transparent;
           height: 39px;
           width: 39px;
           margin-right: 20px;
@@ -80,7 +80,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .under-top {
       &__logo {
-        background: url('assets/images/under_top_logo.svg') no-repeat 0 0 transparent;
+        background: url('../images/under_top_logo.svg') no-repeat 0 0 transparent;
         width: 240px;
         height: 108px;
       }
@@ -109,7 +109,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             margin-bottom: 3%;
           }
           li:before {
-            content: url('assets/images/galka.svg');
+            content: url('../images/galka.svg');
             padding-right: 10px;
           }
         }
@@ -119,7 +119,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     }
     .banner {
       &__img {
-        background: url('assets/images/main_banner.svg') no-repeat 0 0 transparent;
+        background: url('../images/main_banner.svg') no-repeat 0 0 transparent;
         height: 430px;
         display: flex;
         align-items: center;
@@ -127,7 +127,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       }
       &__button {
         cursor: pointer;
-        background: url('assets/images/yellow_button.svg') no-repeat 0 0 transparent;
+        background: url('../images/yellow_button.svg') no-repeat 0 0 transparent;
         width: 270px;
         height: 55px;
         align-self: flex-end;
@@ -142,39 +142,39 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       background: $light-blue;
       &__item {
         &_1 {
-          background: url('assets/images/advantage_1.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_1.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_2 {
-          background: url('assets/images/advantage_2.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_2.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_3 {
-          background: url('assets/images/advantage_3.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_3.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_4 {
-          background: url('assets/images/advantage_4.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_4.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_5 {
-          background: url('assets/images/advantage_5.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_5.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_6 {
-          background: url('assets/images/advantage_6.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_6.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_7 {
-          background: url('assets/images/advantage_7.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_7.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_8 {
-          background: url('assets/images/advantage_8.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_8.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         &_9 {
-          background: url('assets/images/advantage_9.svg') no-repeat center 0 transparent;
+          background: url('../images/advantage_9.svg') no-repeat center 0 transparent;
           height: 110px;
         }
         width: 294px;
@@ -215,7 +215,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         text-decoration: none;
       }
       a + span {
-        content: url('assets/images/galka_bottom.svg');
+        content: url('../images/galka_bottom.svg');
         padding-left: 5px;
       }
       h3 {
@@ -230,15 +230,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         color: #616161;
       }
       &__img_1 {
-        background: url('assets/images/e-clinic-1.svg') no-repeat 0 0 transparent;
+        background: url('../images/e-clinic-1.svg') no-repeat 0 0 transparent;
         height: 266px;
       }
       &__img_2 {
-        background: url('assets/images/e-clinic-2.svg') no-repeat 0 0 transparent;
+        background: url('../images/e-clinic-2.svg') no-repeat 0 0 transparent;
         height: 305px;
       }
       &__img_3 {
-        background: url('assets/images/e-clinic-3.svg') no-repeat 0 0 transparent;
+        background: url('../images/e-clinic-3.svg') no-repeat 0 0 transparent;
         height: 245px;
       }
     }
@@ -274,7 +274,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         }
         &_blue {
           position: absolute;
-          background: url('assets/images/rectangle.svg') no-repeat 0 0 transparent;
+          background: url('../images/rectangle.svg') no-repeat 0 0 transparent;
           height: 332px;
           padding: 50px 100px 0 50px;
           top: -10%;
@@ -292,7 +292,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
             color: #cad7ff;
           }
           &_img {
-            background: url('assets/images/yellow_book.svg') no-repeat 0 0 transparent;
+            background: url('../images/yellow_book.svg') no-repeat 0 0 transparent;
             height: 73px;
           }
         }
@@ -306,15 +306,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         border-right: 1px solid #d0daec;
       }
       &__img_1 {
-        background: url('assets/images/statistic_1.svg') no-repeat 0 0 transparent;
+        background: url('../images/statistic_1.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
       &__img_2 {
-        background: url('assets/images/statistic_2.svg') no-repeat 0 0 transparent;
+        background: url('../images/statistic_2.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
       &__img_3 {
-        background: url('assets/images/statistic_3.svg') no-repeat 0 0 transparent;
+        background: url('../images/statistic_3.svg') no-repeat 0 0 transparent;
         height: 69px;
       }
     }
@@ -352,7 +352,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
           color: #000;
         }
         li:before {
-          content: url('assets/images/tire.svg');
+          content: url('../images/tire.svg');
           position: relative;
           padding-right: 5px;
           bottom: 5px;
@@ -418,7 +418,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         border: 1px solid #e0e0e0;
         box-shadow: 1px 10px 20px -7px rgba(0, 0, 0, 0.75);
         &_img {
-          background: url('assets/images/feedback_form_envelope.svg') no-repeat center 0 transparent;
+          background: url('../images/feedback_form_envelope.svg') no-repeat center 0 transparent;
           height: 120px;
           margin-top: 15px;
         }
@@ -475,7 +475,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         color: #919191;
       }
       &__item_stars {
-        background: url('assets/images/stars.svg') no-repeat 0 0 transparent;
+        background: url('../images/stars.svg') no-repeat 0 0 transparent;
         width: 97px;
         height: 17px;
         display: inline-block;
@@ -486,13 +486,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
         margin-right: 30px;
       }
       &__item_img_1 {
-        background: url('assets/images/reviews_1.svg') no-repeat 0 0 transparent;
+        background: url('../images/reviews_1.svg') no-repeat 0 0 transparent;
       }
       &__item_img_2 {
-        background: url('assets/images/reviews_2.svg') no-repeat 0 0 transparent;
+        background: url('../images/reviews_2.svg') no-repeat 0 0 transparent;
       }
       &__item_img_3 {
-        background: url('assets/images/reviews_3.svg') no-repeat 0 0 transparent;
+        background: url('../images/reviews_3.svg') no-repeat 0 0 transparent;
       }
     }
   }
