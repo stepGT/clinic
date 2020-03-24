@@ -647,7 +647,7 @@ ul {
     .under-top__text h1 {
       font-size: 24px;
       line-height: 28px;
-      margin: 0;
+      margin: 20px 0;
       text-align: left !important;
     }
     .under-top__text p {
@@ -731,6 +731,9 @@ ul {
       padding-left: 33px;
       text-align: left;
     }
+    .advantage {
+      margin: 0;
+    }
     .reviews__item_center {
       width: 320px;
       height: 400px;
@@ -775,6 +778,13 @@ ul {
     }
     .footer__text_wrapper .copyright {
       display: block;
+    }
+    .mobile_row {
+      background: #f1f6ff;
+    }
+    .under_banner {
+      padding: 0;
+      margin: -90px 0 0 0;
     }
   }
 }
