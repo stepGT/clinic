@@ -15,6 +15,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
+    //host: 'localhost',
+    host: '192.168.184.69',
     port: 7770
   },
   plugins: [
