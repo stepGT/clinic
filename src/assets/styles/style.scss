@@ -739,6 +739,43 @@ ul {
       width: auto;
       height: auto;
     }
+    .feedback_form__wrapper {
+      width: 100%;
+      height: 540px;
+      padding: 0 5%;
+    }
+    .feedback_form__wrapper_block p {
+      width: auto;
+    }
+    .feedback_form__wrapper_block {
+      width: 100%;
+      float: none !important;
+    }
+    .feedback_form input, .feedback_form textarea {
+      width: 100%;
+    }
+    .feedback_form__wrapper_img {
+      height: 90px;
+    }
+    .feedback_form__wrapper_block_item {
+      margin-bottom: 0;
+    }
+    .feedback_form__wrapper_block_item_button {
+      padding-left: 0;
+    }
+    .feedback_form button {
+      width: 100%;
+    }
+    .footer hr {
+      width: 50%;
+    }
+    .footer__text_wrapper b {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .footer__text_wrapper .copyright {
+      display: block;
+    }
   }
 }
 // Small devices (landscape phones, less than 768px)
