@@ -722,6 +722,23 @@ ul {
     .statistic__item_blue_img {
       background: url('../images/book.svg') no-repeat 0 0 transparent;
     }
+    .advantage__item {
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+    .advantage__item p, .advantage__item h3 {
+      padding-left: 33px;
+      text-align: left;
+    }
+    .reviews__item_center {
+      width: 320px;
+      height: 400px;
+    }
+    .reviews__carousel-item {
+      width: auto;
+      height: auto;
+    }
   }
 }
 // Small devices (landscape phones, less than 768px)
