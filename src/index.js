@@ -6,7 +6,7 @@ $(document).ready(function ($) {
     let menu = $(selector);
     let button = menu.find('.burger-menu__button');
     let links = menu.find('.burger-menu__link');
-    let overlay = menu.find('.burger-menu__overlay');
+    let close = menu.find('.burger-menu__nav_back_close');
 
     button.on('click', (e) => {
       e.preventDefault();
@@ -14,7 +14,7 @@ $(document).ready(function ($) {
     });
 
     links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
+    close.on('click', () => toggleMenu());
 
     function toggleMenu() {
       menu.toggleClass('burger-menu_active');

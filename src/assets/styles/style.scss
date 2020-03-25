@@ -790,8 +790,6 @@ ul {
       filter: brightness(0.7)
     }
     .burger-menu__button {
-      width: 20px;
-      height: 17px;
       transition: 0.4s;
     }
     .burger-menu__lines,
@@ -853,17 +851,10 @@ ul {
       font-weight: bold;
       color: #fff;
     }
-    .burger-menu__overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 10;
-    }
-    .burger-menu_active .burger-menu__overlay {
-      display: block;
+    .burger-menu__nav_back_close {
+      background: url('../images/mobile/back_close.svg') no-repeat 0 0 transparent;
+      width: 13px;
+      height: 23px;
     }
   }
 }
