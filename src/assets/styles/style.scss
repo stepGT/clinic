@@ -632,6 +632,19 @@ ul {
       border: 1px solid #e0e0e0;
     }
     .main-top-mobile {
+      a.dropdown-item {
+        &:hover, &:active {
+          background: #ebf0fd;
+          mix-blend-mode: normal;
+          color: #000;
+          border-right: 3px #3769e5 solid;
+        }
+        font-family: Gilroy, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 43px;
+        color: #000;
+      }
       &__phone {
         background: url('../images/mobile/phone.svg') no-repeat 0 0 transparent;
         width: 30px;
@@ -831,12 +844,14 @@ ul {
       display: flex;
       flex-flow: column;
       height: 100%;
-      width: 293px;
-      background: #f2f2f2;
+      width: 90%;
+      background: #fff;
       overflow: auto;
       left: -100%;
       transition: 0.5s;
       top: 0;
+      border: 1px solid #e0e0e0;
+      box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
     }
     .burger-menu_active .burger-menu__nav {
       left: 0;
@@ -855,6 +870,7 @@ ul {
       background: url('../images/mobile/back_close.svg') no-repeat 0 0 transparent;
       width: 13px;
       height: 23px;
+      margin: 10px 0 0 10px;
     }
   }
 }
