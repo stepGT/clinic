@@ -2,30 +2,25 @@ import './assets/styles/style.scss'
 import './bootstrap/bootstrap'
 
 $(document).ready(function ($) {
-  function burgerMenu(selector) {
+  /**
+   * Burger menu self-invoking functions
+   */
+  (function (selector) {
     let menu = $(selector);
-    let button = menu.find('.burger-menu__button');
-    let links = menu.find('.burger-menu__link');
+    let body = $('body');
     let close = menu.find('.burger-menu__nav_back_close');
-
-    button.on('click', (e) => {
+    //
+    menu.find('.burger-menu__button').on('click', (e) => {
       e.preventDefault();
       toggleMenu();
     });
-
-    links.on('click', () => toggleMenu());
     close.on('click', () => toggleMenu());
-
-    function toggleMenu() {
+    /**
+     *
+     */
+    const toggleMenu = () => {
       menu.toggleClass('burger-menu_active');
-      if (menu.hasClass('burger-menu_active')) {
-        $('body').css('overflow', 'hidden');
-      }
-      else {
-        $('body').css('overflow', 'visible');
-      }
+      menu.hasClass('burger-menu_active') ? body.css('overflow', 'hidden') : body.css('overflow', 'visible');
     }
-  }
-  //
-  burgerMenu('.burger-menu');
+  }('.burger-menu'));
 });
