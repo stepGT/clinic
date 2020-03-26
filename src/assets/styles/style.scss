@@ -649,6 +649,8 @@ ul {
         background: url('../images/mobile/phone.svg') no-repeat 0 0 transparent;
         width: 30px;
         height: 30px;
+        border: none;
+        outline: none;
       }
       &__burger {
         background: url('../images/mobile/burger.svg') no-repeat 0 0 transparent;
@@ -830,6 +832,44 @@ ul {
       margin: 10px 0 0 10px;
     }
     /* END burger-menu */
+    .modal-header {
+      border-bottom: 0;
+      h5 {
+        font-family: Gilroy, sans-serif;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 26px;
+        text-align: center;
+      }
+      .close {
+        background: url('../images/mobile/close_modal.svg') no-repeat 0 0 transparent;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+      }
+    }
+    .modal-body {
+      span {
+        font-family: Proxima Nova, sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+      &__phone_green {
+        background: url('../images/mobile/phone_green.svg') no-repeat 0 0 transparent;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .modal-content {
+      border-radius: 1.3rem;
+    }
+    .modal-dialog {
+      margin: 0;
+    }
   }
 }
 // Small devices (landscape phones, less than 768px)

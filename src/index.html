@@ -66,7 +66,38 @@
                 <div class="col-xl-2 main-top__logo"></div>
             </div>
             <div class="col-2 d-flex align-items-center">
-                <div class="main-top-mobile__phone"></div>
+                <!-- Button trigger modal -->
+                <button type="button" class="main-top-mobile__phone" data-toggle="modal"
+                        data-target="#exampleModal"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Позвонить:</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div class="float-left">Хабаровск<br>
+                                        <span>7 (4242) 92-92-05</span>
+                                    </div>
+                                    <div class="float-right modal-body__phone_green"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr>
+                                <div>
+                                    <div class="float-left">Владивосток<br>
+                                        <span>7 (423) 202-92-05</span>
+                                    </div>
+                                    <div class="float-right modal-body__phone_green"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
