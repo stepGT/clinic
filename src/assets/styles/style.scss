@@ -155,9 +155,7 @@ ul {
         text-align: center;
       }
       .modal-content span {
-        width: 232px;
-        height: 36px;
-        display: block;
+        width: auto;
         margin: auto;
       }
       .modal-header {
@@ -167,7 +165,7 @@ ul {
         position: relative;
         top: -30px;
         right: 10px;
-        width: 45px;
+        width: 30px;
       }
       .main-top__logo {
         background: url('../images/mobile/logo_form.svg') no-repeat 0 0 transparent;
@@ -389,6 +387,14 @@ ul {
     }
   }
   .feedback_form {
+    button.close {
+      background: url('../images/mobile/close_modal.svg') no-repeat 0 0 transparent;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+    }
     input, textarea {
       width: 372px;
       background: #fff;
@@ -694,6 +700,53 @@ ul {
       border: 1px solid #e0e0e0;
     }
     .main-top-mobile {
+      .modal-header {
+        border-bottom: 0;
+        h5 {
+          font-family: Gilroy, sans-serif;
+          font-weight: 800;
+          font-size: 21px;
+          line-height: 26px;
+          text-align: center;
+        }
+        .close {
+          background: url('../images/mobile/close_modal.svg') no-repeat 0 0 transparent;
+          width: 40px;
+          height: 30px;
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          position: absolute;
+          top: -4%;
+          right: -3%;
+        }
+      }
+      .modal-body {
+        span {
+          font-family: Proxima Nova, sans-serif;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+        }
+        &__phone_green {
+          background: url('../images/mobile/phone_green.svg') no-repeat 0 0 transparent;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .modal-content span {
+        width: 232px;
+        height: 36px;
+        display: block;
+        margin: 0 auto;
+      }
+      .modal-content {
+        border-radius: 1.3rem;
+      }
+      .modal-dialog {
+        margin: 0;
+      }
       a.dropdown-item {
         &:hover, &:active {
           background: #ebf0fd;
@@ -894,43 +947,73 @@ ul {
       margin: 10px 0 0 10px;
     }
     /* END burger-menu */
+    .banner, .main-top-mobile {
+      .feedback_form {
+        .modal-header {
+          border-bottom: 0;
+          h5 {
+            font-family: Gilroy, sans-serif;
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 26px;
+            text-align: center;
+          }
+          .close {
+            background: url('../images/mobile/close_modal.svg') no-repeat 0 0 transparent;
+            width: 40px;
+            height: 30px;
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+          }
+        }
+        .modal-body {
+          span {
+            font-family: Proxima Nova, sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+          }
+          &__phone_green {
+            background: url('../images/mobile/phone_green.svg') no-repeat 0 0 transparent;
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .modal-content span {
+          width: 232px;
+          height: 36px;
+          display: block;
+          margin: 0 auto;
+        }
+        .modal-content {
+          border-radius: 1.3rem;
+        }
+        .modal-dialog {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-only(xl) {
+  .banner {
     .modal-header {
       border-bottom: 0;
-      h5 {
-        font-family: Gilroy, sans-serif;
-        font-weight: 800;
-        font-size: 21px;
-        line-height: 26px;
-        text-align: center;
-      }
-      .close {
-        background: url('../images/mobile/close_modal.svg') no-repeat 0 0 transparent;
-        width: 30px;
-        height: 30px;
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-      }
     }
-    .modal-body {
-      span {
-        font-family: Proxima Nova, sans-serif;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 24px;
-        color: #000;
-      }
-      &__phone_green {
-        background: url('../images/mobile/phone_green.svg') no-repeat 0 0 transparent;
-        width: 40px;
-        height: 40px;
-      }
+    .modal-header h5 {
+      width: 325px;
+      margin: auto;
     }
-    .modal-content {
-      border-radius: 1.3rem;
+    .modal-body.feedback_form__wrapper_block form {
+      text-align: center;
     }
-    .modal-dialog {
-      margin: 0;
+    .feedback_form__wrapper_block {
+      width: 100%;
+    }
+    .feedback_form__wrapper_block_item {
+      text-align: center;
     }
   }
 }
