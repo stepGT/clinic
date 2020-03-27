@@ -129,7 +129,36 @@
     </section>
     <section class="banner">
         <div class="banner__img">
-            <div class="banner__button"></div>
+            <!-- Button trigger modal -->
+            <div data-toggle="modal" data-target="#exampleModal2" class="banner__button"></div>
+            <!-- Modal -->
+            <div class="feedback_form modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="main-top__logo"></div>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Запросить доступ к демо-варсии</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <span>Укажите email на который мы вышлем данные для входа</span>
+                        <div class="modal-body feedback_form__wrapper_block">
+                            <form action="#">
+                                <div class="feedback_form__wrapper_block_item">
+                                    <input placeholder="Введите адрес клиники" type="text"/>
+                                </div>
+                                <div class="feedback_form__wrapper_block_item">
+                                    <input placeholder="Введите ваш e-mail" type="text"/>
+                                </div>
+                                <div class="feedback_form__wrapper_block_item_button">
+                                    <button>Запросить доступ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="under_banner">
